@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "769467655646",
+    "project_id": "prfit-v2",
+    "storage_bucket": "prfit-v2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:769467655646:android:2c2606fffcdc05bef8a94f",
+        "android_client_info": {
+          "package_name": "com.diajarkoding.prfit_v2_getx"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "769467655646-488ir0hsuqrc6aoa8quq6n05nj3f4kb1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDblj3TLOluKQL-nycKHaefgSdn5e1YTL0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "769467655646-488ir0hsuqrc6aoa8quq6n05nj3f4kb1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

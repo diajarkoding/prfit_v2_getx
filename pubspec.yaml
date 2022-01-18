@@ -1,0 +1,38 @@
+name: prfit_v2_getx
+version: 1.0.0+1
+publish_to: none
+description: A new Flutter project.
+environment:
+  sdk: '>=2.15.1 <3.0.0'
+
+dependencies:
+  cloud_firestore: ^3.1.6
+  cupertino_icons: ^1.0.2
+  equatable: ^2.0.3
+  firebase_auth: ^3.3.5
+  flutter:
+    sdk: flutter
+  get: 4.6.1
+
+dev_dependencies:
+  flutter_lints: ^1.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/
+    - assets/abs/
+    - assets/back/
+    - assets/biceps/
+    - assets/calves/
+    - assets/chest/
+    - assets/exercises/
+    - assets/forearms/
+    - assets/legs/
+    - assets/shoulders/
+    - assets/triceps/
+    - assets/logo/
+    - assets/pinangria/
