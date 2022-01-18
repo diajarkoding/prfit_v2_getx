@@ -91,13 +91,6 @@ class HomeView extends GetView<HomeController> {
       appBar: AppBar(
         automaticallyImplyLeading: false,
         title: Text("PRFit"),
-        actions: [
-          IconButton(
-              onPressed: () {
-                authController.signOut();
-              },
-              icon: Icon(Icons.logout))
-        ],
       ),
       body: SingleChildScrollView(
         child: Column(
