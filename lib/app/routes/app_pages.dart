@@ -1,5 +1,7 @@
 import 'package:get/get.dart';
 
+import 'package:prfit_v2_getx/app/modules/abs_list/bindings/abs_list_binding.dart';
+import 'package:prfit_v2_getx/app/modules/abs_list/views/abs_list_view.dart';
 import 'package:prfit_v2_getx/app/modules/bmi/bindings/bmi_binding.dart';
 import 'package:prfit_v2_getx/app/modules/bmi/views/bmi_view.dart';
 import 'package:prfit_v2_getx/app/modules/home/bindings/home_binding.dart';
@@ -64,6 +66,11 @@ class AppPages {
       name: _Paths.RESET_PASSWORD,
       page: () => ResetPasswordView(),
       binding: ResetPasswordBinding(),
+    ),
+    GetPage(
+      name: _Paths.ABS_LIST,
+      page: () => AbsListView(),
+      binding: AbsListBinding(),
     ),
   ];
 }

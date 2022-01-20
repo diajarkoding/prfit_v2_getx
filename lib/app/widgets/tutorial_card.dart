@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:prfit_v2_getx/app/routes/app_pages.dart';
 
 class TutorialCard extends StatelessWidget {
   final String imageUrl;
@@ -9,6 +11,7 @@ class TutorialCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
+      onTap: () => Get.toNamed(Routes.ABS_LIST),
       // onTap: () => Navigator.push(
       //     context, MaterialPageRoute(builder: (context) => const AbsList())),
       child: SizedBox(

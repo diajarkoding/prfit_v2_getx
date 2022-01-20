@@ -1,10 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:get/get.dart';
-import 'package:prfit_v2_getx/app/modules/login/controllers/login_controller.dart';
-import 'package:prfit_v2_getx/app/modules/signup/controllers/signup_controller.dart';
 import 'package:prfit_v2_getx/app/services/auth_service.dart';
 import 'package:prfit_v2_getx/app/routes/app_pages.dart';
-
 import 'loading_controller.dart';
 
 class AuthController extends GetxController {

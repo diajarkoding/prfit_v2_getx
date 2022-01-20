@@ -14,14 +14,6 @@ class MyApp extends StatelessWidget {
       stream: AuthService().streamAuthStatus,
       builder: (context, snapshot) {
         print(snapshot.data);
-        // return GetMaterialApp(
-        //   title: "Application",
-        //   initialRoute: snapshot.data != null && snapshot.data!.emailVerified
-        //       ? Routes.MAIN
-        //       : Routes.LOGIN,
-        //   getPages: AppPages.routes,
-        // );
-
         if (snapshot.connectionState == ConnectionState.active) {
           return GetMaterialApp(
             title: "Application",
@@ -31,17 +23,6 @@ class MyApp extends StatelessWidget {
             getPages: AppPages.routes,
           );
         } else {
-          // return GetMaterialApp(
-          //   initialRoute: snapshot.data != null && snapshot.data!.emailVerified
-          //       ? Routes.LOADING_HOME
-          //       : Routes.LOADING_LOGIN,
-          //   getPages: AppPages.routes,
-          // );
-          // if (snapshot.data != null && snapshot.data!.emailVerified) {
-          //   return LoadingLoginView();
-          // } else {
-          //   return LoadingHomeView();
-          // }
           return Loading();
         }
       },

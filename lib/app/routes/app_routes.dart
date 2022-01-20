@@ -12,9 +12,7 @@ abstract class Routes {
   static const BMI = _Paths.BMI;
   static const USER = _Paths.USER;
   static const RESET_PASSWORD = _Paths.RESET_PASSWORD;
-  static const LOADING_MAIN = _Paths.LOADING_MAIN;
-  static const LOADING_LOGIN = _Paths.LOADING_LOGIN;
-  static const LOADING_HOME = _Paths.LOADING_HOME;
+  static const ABS_LIST = _Paths.ABS_LIST;
 }
 
 abstract class _Paths {
@@ -26,7 +24,5 @@ abstract class _Paths {
   static const BMI = '/bmi';
   static const USER = '/user';
   static const RESET_PASSWORD = '/reset-password';
-  static const LOADING_MAIN = '/loading-main';
-  static const LOADING_LOGIN = '/loading-login';
-  static const LOADING_HOME = '/loading-home';
+  static const ABS_LIST = '/abs-list';
 }
