@@ -1,9 +1,8 @@
 import 'package:get/get.dart';
-
-import 'package:prfit_v2_getx/app/modules/abs_list/bindings/abs_list_binding.dart';
-import 'package:prfit_v2_getx/app/modules/abs_list/views/abs_list_view.dart';
 import 'package:prfit_v2_getx/app/modules/bmi/bindings/bmi_binding.dart';
 import 'package:prfit_v2_getx/app/modules/bmi/views/bmi_view.dart';
+import 'package:prfit_v2_getx/app/modules/exercises/bindings/exercises_binding.dart';
+import 'package:prfit_v2_getx/app/modules/exercises/views/exercises_view.dart';
 import 'package:prfit_v2_getx/app/modules/home/bindings/home_binding.dart';
 import 'package:prfit_v2_getx/app/modules/home/views/home_view.dart';
 import 'package:prfit_v2_getx/app/modules/login/bindings/login_binding.dart';
@@ -14,12 +13,12 @@ import 'package:prfit_v2_getx/app/modules/reset_password/bindings/reset_password
 import 'package:prfit_v2_getx/app/modules/reset_password/views/reset_password_view.dart';
 import 'package:prfit_v2_getx/app/modules/signup/bindings/signup_binding.dart';
 import 'package:prfit_v2_getx/app/modules/signup/views/signup_view.dart';
-import 'package:prfit_v2_getx/app/modules/tutorial/bindings/tutorial_binding.dart';
-import 'package:prfit_v2_getx/app/modules/tutorial/views/tutorial_view.dart';
 import 'package:prfit_v2_getx/app/modules/user/bindings/user_binding.dart';
 import 'package:prfit_v2_getx/app/modules/user/views/user_view.dart';
-
 part 'app_routes.dart';
+
+int index = 0;
+// Exercises exercises;
 
 class AppPages {
   AppPages._();
@@ -47,11 +46,11 @@ class AppPages {
       page: () => SignupView(),
       binding: SignupBinding(),
     ),
-    GetPage(
-      name: _Paths.TUTORIAL,
-      page: () => TutorialView(),
-      binding: TutorialBinding(),
-    ),
+    // GetPage(
+    //   name: _Paths.TUTORIAL,
+    //   page: () => TutorialView(),
+    //   binding: TutorialBinding(),
+    // ),
     GetPage(
       name: _Paths.BMI,
       page: () => BmiView(),
@@ -67,10 +66,25 @@ class AppPages {
       page: () => ResetPasswordView(),
       binding: ResetPasswordBinding(),
     ),
+    // GetPage(
+    //   name: _Paths.ABS_LIST,
+    //   page: () => AbsListView(),
+    //   binding: AbsListBinding(),
+    // ),
+    // GetPage(
+    //   name: _Paths.EXERCISE_LIST,
+    //   page: () => ExerciseListView(),
+    //   binding: ExerciseListBinding(),
+    // ),
     GetPage(
-      name: _Paths.ABS_LIST,
-      page: () => AbsListView(),
-      binding: AbsListBinding(),
+      name: _Paths.EXERCISES,
+      page: () => ExercisesView(),
+      binding: ExercisesBinding(),
     ),
+    // GetPage(
+    //   name: _Paths.EXERCISE_DETAIL,
+    //   page: () => ExerciseDetailView(),
+    //   binding: ExerciseDetailBinding(),
+    // ),
   ];
 }

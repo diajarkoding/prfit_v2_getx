@@ -13,6 +13,9 @@ abstract class Routes {
   static const USER = _Paths.USER;
   static const RESET_PASSWORD = _Paths.RESET_PASSWORD;
   static const ABS_LIST = _Paths.ABS_LIST;
+  static const EXERCISE_LIST = _Paths.EXERCISE_LIST;
+  static const EXERCISES = _Paths.EXERCISES;
+  static const EXERCISE_DETAIL = _Paths.EXERCISE_DETAIL;
 }
 
 abstract class _Paths {
@@ -25,4 +28,7 @@ abstract class _Paths {
   static const USER = '/user';
   static const RESET_PASSWORD = '/reset-password';
   static const ABS_LIST = '/abs-list';
+  static const EXERCISE_LIST = '/exercise-list';
+  static const EXERCISES = '/exercises';
+  static const EXERCISE_DETAIL = '/exercise-detail';
 }

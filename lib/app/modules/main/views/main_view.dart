@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-
 import 'package:get/get.dart';
 import 'package:prfit_v2_getx/app/modules/bmi/views/bmi_view.dart';
+import 'package:prfit_v2_getx/app/modules/exercises/views/exercises_view.dart';
 import 'package:prfit_v2_getx/app/modules/home/views/home_view.dart';
-import 'package:prfit_v2_getx/app/modules/tutorial/views/tutorial_view.dart';
 import 'package:prfit_v2_getx/app/modules/user/views/user_view.dart';
 
 import '../controllers/main_controller.dart';
@@ -32,7 +31,7 @@ class MainView extends GetView<MainController> {
               ),
             ),
             BottomNavigationBarItem(
-              label: 'Tutorial',
+              label: 'Exercises',
               icon: Icon(
                 Icons.fitness_center,
                 size: 26,
@@ -52,7 +51,7 @@ class MainView extends GetView<MainController> {
               ),
             ),
             BottomNavigationBarItem(
-              label: 'Pengguna',
+              label: 'User',
               icon: Icon(
                 Icons.person,
                 size: 26,
@@ -73,7 +72,7 @@ class MainView extends GetView<MainController> {
         return HomeView();
 
       case 1:
-        return TutorialView();
+        return ExercisesView();
 
       case 2:
         return BmiView();
